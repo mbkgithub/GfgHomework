@@ -1,0 +1,70 @@
+.header{background-color: #000;}
+.footer{background-color: #000; height:80px;}
+body {
+    font-family: 'Montserrat';font-size: 18px;
+}
+
+.btn{background-color: #000; color:#fff; margin:2px;border-radius: 2px;border-width: 2px; font-family: 'Montserrat'; font-size: 18px; }
+.btn:hover {
+   border-color: #DCDCDC;
+   border-width:3px;
+   color:black;
+  background-color: #696969;
+}
+.buttonParent{display: inline; float:right; margin-top:50px; margin-right:5px;}
+
+.img1{
+
+    position: relative;
+    overflow: hidden;
+    margin-left: 300px;
+    padding: 0;
+  
+}
+.nav {
+  float: left;
+  width: 25%;
+  height: 605px;
+  background:white;
+  //background: lightblue;
+  padding: 20px;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li:nth-child(even) { 
+            background-color: aliceblue; 
+        } 
+		nav ul li:nth-child(odd) { 
+            background-color: #cff; 
+        }
+nav ul li:hover{
+  //background:aliceblue;
+}
+
+article {
+  padding: 20px;
+  width: 97%;
+  margin-left:10px;
+  word-wrap: break-word
+  content:"";
+  background-color: #f1f1f1;
+  height: 605px; 
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
